@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .japri {
+      font-family: 'Lilita One', cursive;
+    }
+  </style>
+  <title>Bakso Japri</title>
+</head>
+
+<body>
+  <nav class="bg-amber-400">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex flex-wrap gap-5 md:gap-0 md:flex-row md:items-center justify-between">
+        <div>
+          <a href="#" class="flex items-center gap-4"><img src="./img/japri.png" class="h-16"><span class="japri block font-bold text-2xl text-slate-900"><i>BASO JAPRI</i></span></a>
+        </div>
+        <button onclick="toggleNavbar()" class="block md:hidden"><i class="fa-solid fa-bars"></i></button>
+        <div id="menu" class="hidden md:block w-full md:w-auto">
+          <ul class="flex flex-col md:flex-row text-slate-900 gap-2">
+            <li class="px-4 py-2">
+              <a href="index.html">Baso</a>
+            </li>
+            <li class="px-4 py-2 font-bold">
+              <a href="minuman.html">Minuman</a>
+            </li>
+            <li class="px-4 py-2">Kerupuk</li>
+            <li role="button" class="px-4 py-2 hover:bg-red-600 bg-red-500 text-white"><i class="fa-solid fa-cart-shopping"></i> Pesan Online</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Informasi -->
+  <div class="text-center bg-slate-900 text-amber-400 py-2 px-4">
+    <p class="japri" style="letter-spacing: 3px;"><i>Dalam rangka memenuhi tugas kuliah Front End Development.</i></p>
+  </div>
+  <!-- Akhir Informasi -->
+  <section>
+    <div class="container mx-auto px-4 py-5">
+      <div class="text-center space-y-2">
+        <h1 class="font-bold text-slate-900 text-2xl">Menu Minuman Favorit</h1>
+        <p class="text-slate-800">Murah, Wareug, Enak. Hayu sakulawargi ngabaso di Japri!</p>
+      </div>
+      <div class="flex flex-wrap mt-5">
+        <div class="w-full md:w-1/3 p-2">
+          <div class="border border-slate-200 bg-white">
+            <img src="./img/teh.jpeg" class="w-full">
+            <div class="space-y-2 p-4">
+              <h2 class="text-base md:text-lg font-bold text-slate-900">Bakso Sambel Lalab</h2>
+              <p class="text-sm md:text-lg">Rp10.000</p>
+              <span class="inline-block text-amber-400">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-2">
+          <div class="border border-slate-200 bg-white">
+            <img src="./img/teh.jpeg" class="w-full">
+            <div class="space-y-2 p-4">
+              <h2 class="text-base md:text-lg font-bold text-slate-900">Bakso Sambel Lalab</h2>
+              <p class="text-sm md:text-lg">Rp10.000</p>
+              <span class="inline-block text-amber-400">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-2">
+          <div class="border border-slate-200 bg-white">
+            <img src="./img/teh.jpeg" class="w-full">
+            <div class="space-y-2 p-4">
+              <h2 class="text-base md:text-lg font-bold text-slate-900">Bakso Sambel Lalab</h2>
+              <p class="text-sm md:text-lg">Rp10.000</p>
+              <span class="inline-block text-amber-400">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    const toggleNavbar = () => {
+      $('#menu').toggle();
+    }
+  </script>
+</body>
+
+</html>
